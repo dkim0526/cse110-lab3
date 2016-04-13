@@ -1,6 +1,7 @@
 package com.example.bek005.cse110_lab3.tests;
 
 import android.test.ActivityInstrumentationTestCase2;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import com.example.bek005.cse110_lab3.MainActivity;
@@ -18,11 +19,11 @@ public class JUnit_test extends ActivityInstrumentationTestCase2<MainActivity> {
     public void test_sum() {
         mainActivity = getActivity();
 
-        TextView num1 = (TextView) mainActivity.findViewById(R.id.textView2);
+        EditText num1 = (EditText) mainActivity.findViewById(R.id.textView3);
         String number = num1.getText().toString();
         int one = Integer.parseInt(number);
 
-        TextView num2 = (TextView) mainActivity.findViewById(R.id.textView2);
+        EditText num2 = (EditText) mainActivity.findViewById(R.id.textView);
         String number2 = num2.getText().toString();
         int two = Integer.parseInt(number2);
 
