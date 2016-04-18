@@ -19,11 +19,11 @@ public class JUnit_test extends ActivityInstrumentationTestCase2<MainActivity> {
     public void test_sum() {
         mainActivity = getActivity();
 
-        EditText num1 = (EditText) mainActivity.findViewById(R.id.textView3);
+        EditText num1 = (EditText) mainActivity.findViewById(R.id.EditText3);
         String number = num1.getText().toString();
         int one = Integer.parseInt(number);
 
-        EditText num2 = (EditText) mainActivity.findViewById(R.id.textView);
+        EditText num2 = (EditText) mainActivity.findViewById(R.id.EditText3);
         String number2 = num2.getText().toString();
         int two = Integer.parseInt(number2);
 
